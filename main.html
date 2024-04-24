@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNS PROJECT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('OIP.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 20px auto;
+            width: 80%;
+            line-height: 1.6;
+        }
+
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+
+        textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #output {
+            margin-bottom: 20px;
+        }
+    </style>
+    
+
+    <div>
+</head>
+    <h1>SHA-256 Hash Generator</h1>
+    <label for="message">Message:</label><br>
+    <textarea id="message" rows="4" cols="50"></textarea><br>
+    <button onclick="generateHash()">Generate Hash</button><br>
+    <label for="output">Hash:</label><br>
+    <textarea id="output" rows="4" cols="50" readonly></textarea><br>
+    <p>SHA-256 stands for Secure Hash Algorithm 256-bit. It is a cryptographic hash function that produces a 256-bit (32-byte) hash value.
+       A cryptographic hash function is a mathematical algorithm that takes an input (or "message") and produces a fixed-size string of bytes. The output, known as the hash value or hash code, is typically a hexadecimal number.</p>
+    <h3>WHY SHA-256??</h3>
+       <p>1. Cryptographic Strength: SHA-256 is designed to be cryptographically secure, meaning it is extremely difficult to reverse-engineer or forge its hash values. <br> 2. Resistance to Collision Attacks: SHA-256 is resistant to collision attacks, where an attacker attempts to find two different inputs that produce the same hash value. <br> <br> <br> <br> </p>
+       <script src="main.js"></script>
+    </div>
+
+
+    <div>
+    <body>
+        <h1>BASE 64 ENCRYPTION AND DECRYPTION</h1>
+        <textarea id="BaseinputText" rows="5" cols="50"></textarea>
+        <br>
+        <button onclick="encodeText()">Encode</button>
+        <button onclick="decodeText()">Decode</button>
+        <br>
+        <textarea id="BaseoutputText" rows="5" cols="50"></textarea>
+      <p>Base64 is not an encryption algorithm; rather, it's a method for encoding binary data into ASCII characters. It's commonly used for encoding binary data, such as images or binary files, into a format that can be transmitted over text-based protocols, such as email or HTTP. <br> <br>
+        Base64 encoding works by converting binary data into a set of 64 characters, consisting of uppercase and lowercase letters, digits, and two additional characters (usually '+', and '/'). This encoding scheme allows binary data to be represented using only printable ASCII characters. <br> <br>
+        Advantages Of Base-64!
+        -> Binary-to-Text Encoding
+        -> Platform Independence
+        -> Data Integrity
+        -> Compact Representation
+        -> Encoding Binary Data in Text Formats <br><br><br><br> </p>
+        <script src="main.js"></script> 
+</body>
+    </div>
+
+<div>
+<body>
+    <h1>Caesar Cipher Encryption And Decryption</h1>
+   
+      <label for="CeaserinputText">Enter Text:</label>
+      <textarea id="CeaserinputText" rows="4" cols="50"></textarea>
+    
+      <label for="shift">Shift:</label>
+      <input type="number" id="shift" value="13">
+    
+    <button onclick="encrypt()">Encrypt</button>
+    <button onclick="decrypt()">Decrypt</button>
+    <br><br>
+      <label for="CeaseroutputText">Result:</label>
+      <textarea id="CeaseroutputText" rows="4" cols="50" readonly></textarea>
+    <p>The Caesar cipher is one of the simplest and earliest known encryption techniques.<br> It's named after Julius Caesar, who used it to communicate securely with his generals. <br> </p>
+    <p>Advantages of Caesar Cipher:
+        -> Simple Implementation
+        -> Speed
+        -> No Special Equipment Needed 
+        -> Decent for Basic Protection
+        <br> <br> <br>
+        </p>
+    <script src="main.js"></script>
+  </body>
+</div>
+
+
+
+</html>
